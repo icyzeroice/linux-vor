@@ -1,0 +1,10 @@
+# Emacs & Vim
+*~
+\#*
+\.?*~
+
+# vscode
+.vscode/
+
+# JetBrains
+.idea/

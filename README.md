@@ -1,0 +1,4 @@
+# Easy Linux Config
+
+### Usage
+
