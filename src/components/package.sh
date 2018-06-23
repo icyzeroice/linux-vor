@@ -1,17 +1,18 @@
-
 #
-# get package manager:
+# @description -- get the package manager in this Linux distribution
 #
 #   [apt/apt-get]
-#
 #     for Ubuntu, Debian, etc.
 # 
 #   [dnf/yum]
-#
 #     for Fedora, CentOS, etc.
 #
 #   [pacman]
+#     for Arch-Linux
 #
+# TODO: ...
+#
+
 getPackageManager() {
   if [ `type type` == 0 ]
   then

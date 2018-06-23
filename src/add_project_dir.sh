@@ -1,10 +1,14 @@
 echo "[LOG] <project_path_loader.sh> loaded"
 
-load_working_directory() {
-  export PATH=${PATH}/$1
+##
+# find all file from the project
+#
+
+add_project_directory() {
+  export PATH=${PATH}:$1/$2
 }
 
-load_all_working_directory() {
+add_all_working_directory() {
   
   # list the directory name relative to the project path
   directory_list=(
@@ -15,6 +19,8 @@ load_all_working_directory() {
 
   for relative_path in ${directory_list[*]}
   do
-    echo ${relative_path}
+    load_project_directory $1 ${relative_path}
   done
+
+  echo ""
 }

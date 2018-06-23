@@ -1,21 +1,15 @@
 #!/bin/bash
 
-##
-# initialize the work path
-# @param {$1} filename
-#
-init_project_path() {
-  entry_file=$(readlink -f $1)
-  workspace_path=$(dirname ${entry_file})
+# find all the project file first!
+entry_file=$(readlink -f $0)
+workspace_path=$(dirname ${entry_file})
+export PATH=${PATH}:${workspace_path}/src
 
-  export PATH=${PATH}:${workspace_path}/src
-  echo "[LOG] added workspace to system environmental path"
-}
+. add_project_dir.sh
+load_all_working_directory ${workspace_path}
 
-init_project_path $0
-
-. project_path_loader.sh
+echo "[LOG] added workspace to system environmental path"
+# Main Body
 . main.sh
 
-load_all_working_directory
 main
