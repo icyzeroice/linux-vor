@@ -1,4 +1,6 @@
-#
+#!/bin/bash
+
+##
 # @description -- print in colour
 #
 # echo -e "\033[${background-color};${color}m words \033[${options}m"

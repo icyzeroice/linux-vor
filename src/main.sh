@@ -1,4 +1,4 @@
-echo "[LOG] <main.sh> loaded"
+#!/bin/bash
 
 ##
 # Main
