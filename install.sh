@@ -1,4 +1,4 @@
 #!/bin/bash
-. ./src/index.sh
+. ./src/main.sh
 
-main()
+main
