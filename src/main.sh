@@ -1,4 +1,6 @@
-#!/bin/bash
+##
+#
+#
 
 shell_import log_color
 shell_import check_root_permission

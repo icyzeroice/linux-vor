@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ##
 # @description -- get the package manager in this Linux distribution
 #

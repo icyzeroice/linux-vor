@@ -1,4 +1,6 @@
+##
 # Setting
+#
 
 enable_plugins=(
   install_packages

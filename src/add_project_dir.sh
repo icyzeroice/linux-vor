@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ##
 # find all file from the project
 #

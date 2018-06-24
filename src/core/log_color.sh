@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ##
 # @description -- print in colour
 #
