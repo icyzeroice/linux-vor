@@ -5,7 +5,7 @@
 # TODO: ...
 #
 
-module_import() {
+shell_import() {
   
   if [ $(eval echo \$$1) ]
   then

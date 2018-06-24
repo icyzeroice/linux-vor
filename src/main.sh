@@ -4,7 +4,7 @@
 # Main
 #
 main() {
-  module_import log_color
+  shell_import log_color
 
   echo "----- Easy Linux Config -----"
   echo__normal Start
