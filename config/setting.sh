@@ -20,7 +20,7 @@ apt_install_list=(
 # Red Hat Series (*.rpm)
 # Use apt or apt-get package management
 dnf_add_repo_list=(
-
+  
 )
 dnf_install_list=(
   curl

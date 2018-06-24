@@ -14,7 +14,7 @@ add_all_working_directory() {
   directory_list=(
     src/core
     src/components
-    src/plugins
+    src/extends
     config
   )
 
