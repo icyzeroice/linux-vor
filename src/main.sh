@@ -1,14 +1,14 @@
 #!/bin/bash
 
+shell_import log_color
+shell_import check_root_permission
+
 ##
 # Main
 #
 main() {
-  shell_import log_color
+  echo_in_color 34 "" "----- Easy Linux Config -----"
+  check_root_permission
 
-  echo "----- Easy Linux Config -----"
-  log__info Start
-  log__warn Ready?
-  log__err Please!
-  echo "----- End -----"
+  echo_in_color 34 "" "----- End -----"
 }

@@ -23,5 +23,4 @@ add_all_working_directory ${workspace_path}
 
 # Main Launcher Programe File(load exactly one time)
 shell_import main
-
 main

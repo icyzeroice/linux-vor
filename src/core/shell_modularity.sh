@@ -9,7 +9,7 @@ shell_import() {
   
   if [ $(eval echo \$$1) ]
   then
-    echo "[LOG] module $1 has been loaded"
+    echo -e "\033[32m[LOG]\033[0m module $1 has been loaded"
     return
   fi
 
@@ -18,7 +18,7 @@ shell_import() {
   
   if [ $? == 0 ]
   then
-    echo "[ERR] $1 is a existed command"
+    echo -e "\033[31m[ERR]\033[0m $1 is a existed command"
     return 1
   fi
 
@@ -27,7 +27,7 @@ shell_import() {
   
   # export module name 
   export $1="$1.sh"
-
-  echo "[LOG] load module $1"
+  
+  echo -e "\033[32m[LOG]\033[0m load module $1"
   return 0
 }
