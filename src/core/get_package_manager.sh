@@ -13,39 +13,41 @@
 # TODO: reserve? or use setting?
 #
 
+shell_import check_command
+
 get_package_manager() {
 
   # TODO: encapsulation the repeat code
 
-  type apt >/dev/null 2>&1
+  check_command apt
   if [ $? == 0 ]
   then
     echo "apt"
     exit 0
   fi
 
-  type apt-get >/dev/null 2>&1
+  check_command apt-get
   if [ $? == 0 ]
   then
     echo "apt-get"
     exit 0
   fi
 
-  type dnf >/dev/null 2>&1
+  check_command dnf
   if [ $? == 0 ]
   then
     echo "dnf"
     exit 0
   fi
 
-  type yum >/dev/null 2>&1
+  check_command yum
   if [ $? == 0 ]
   then
     echo "yum"
     exit 0
   fi
 
-  type pacman >/dev/null 2>&1
+  check_command pacman
   if [ $? == 0 ]
   then
     echo "pacman"

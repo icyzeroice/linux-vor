@@ -12,7 +12,7 @@ shell_import run_extends
 main() {
   echo_in_color 34 "" "----- Easy Linux Config -----"
   
-  check_root_permission
+  # check_root_permission
   
   run_extends
 
