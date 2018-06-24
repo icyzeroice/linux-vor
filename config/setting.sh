@@ -2,36 +2,55 @@
 # Setting
 #
 
-enable_plugins=(
+enabled_extends_list=(
   install_packages
-  install_git_repos
-  install_java
+  # install_downloaded_packages
+  # install_git_repos
+  # install_java
 )
 
-# Debian Series (*.deb)
+package_manager=apt
+package_setup=dpkg
+
+#
+# ---------- Debian Series (*.deb) ----------
 # Use dnf or yum package management
-apt_add_repo_list=(
+# repo:
+#   sudo add-apt-repository ppa:webupd8team/java
+#
 
+install_package_repo_list=(
+  webupd8team/java
 )
-apt_install_list=(
+
+install_package_list=(
   curl
   git
   emacs
 )
 
-# Red Hat Series (*.rpm)
+# ---------- Red Hat Series (*.rpm) ----------
 # Use apt or apt-get package management
-dnf_add_repo_list=(
-  
-)
-dnf_install_list=(
-  curl
-  git
-  emacs
-)
 
-# Set which middleware to load
-middlewares_loaded_list=(
-  
-)
+# install_package_repo_list=(
+#   webupd8team/java
+# )
 
+# install_package_list=(
+#   curl
+#   git
+#   emacs
+# )
+
+# ---------- Arch Series ----------
+# Use pacman package management
+
+# install_package_repo_list=(
+#   webupd8team/java
+# )
+
+# install_package_list=(
+#   curl
+#   git
+#   emacs
+# )

@@ -10,7 +10,7 @@
 #   [pacman]
 #     for Arch-Linux
 #
-# TODO: ...
+# TODO: reserve? or use setting?
 #
 
 get_package_manager() {
