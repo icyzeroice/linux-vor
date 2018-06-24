@@ -33,14 +33,14 @@
 # background-color-azure=46
 # background-color-white=47
 
-echo__normal() {
+log_info() {
   echo -e "\033[32m[LOG]\033[0m "$1
 }
 
-echo__warn() {
+log__warn() {
   echo -e "\033[33m[WARN]\033[0m "$1
 }
 
-echo__err() {
+log__err() {
   echo -e "\033[31m[ERR]\033[0m "$1
 }
