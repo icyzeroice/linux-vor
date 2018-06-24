@@ -6,14 +6,10 @@ shell_import setting
 shell_import log_color
 
 run_extends() {
-
-  install_command="${package_manager} install"
-
-  for package_name in ${install_package_list[*]}
+  for extend_name in ${enabled_extends_list[*]}
   do
-    install_command="${install_command} ${package_name}"
+    shell_import ${extend_name}
+    log_info "Run \`${extend_name}\`"
+    ${extend_name}
   done
-
-  log_info "Run \`${install_command}\`"
-  ${install_command}
 }
