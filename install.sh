@@ -22,6 +22,6 @@ add_all_working_directory ${workspace_path}
 . shell_modularity.sh
 
 # Main Launcher Programe File(load exactly one time)
-. main.sh
+module_import main
 
 main
