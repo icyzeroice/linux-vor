@@ -7,7 +7,7 @@ enabled_extends_list=(
   # fix_nouveau_problem
   # install_packages
   # install_downloaded_packages
-  install_git_repos
+  # install_git_repos
   # install_java
   # install_node
 )
@@ -16,8 +16,8 @@ enabled_extends_list=(
 # TODO: support set username & password for git https
 install_git_repos_list=(
   # | local address you want to put | git repos address | callback (0 means no callback) |
+  # ~/Documents/testrepo https://github.com/icyzeroice/.emacs.d.git test_callback
   # ~/.ssh https://gitee.com/icyzeroice/ssh-save.git 0
-  ~/Documents/testrepo https://github.com/icyzeroice/.emacs.d.git test_callback
   # ~/.emacs.d https://github.com/icyzeroice/.emacs.d.git install_emacs_callback
   # ~/.emacs.d git@github.com:icyzeroice/.emacs.d.git install_emacs_callback
 )
