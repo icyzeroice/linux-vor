@@ -25,6 +25,6 @@ download_git_repo() {
   fi
 
   # run callback
-  $3
+  ($3)
   return 0
 }

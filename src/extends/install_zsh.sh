@@ -7,8 +7,6 @@
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #
 
-
-
 #
 # # install other theme
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -21,3 +19,10 @@
 # Configure the theme in your ~/.zshrc file:
 # ZSH_THEME="bullet-train"
 #
+
+install_zsh() {
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  curl https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme -o ~/.oh-my-zsh/themes/bullet-train.zsh-theme
+
+  # TODO: use `sed`` to enable this theme
+}
