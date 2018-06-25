@@ -22,8 +22,8 @@ Then, add extension module name in the list named `enabled_extends_list` shown i
 
 - [x] install packages
 - [x] install git repos
-- [ ] install java
-- [ ] install nvm
-- [ ] install zsh
+- [x] install java
+- [x] install nvm
+- [x] install zsh
 - [ ] fix nouveau problem
 - [ ] support arch-linux
