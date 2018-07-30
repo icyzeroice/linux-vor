@@ -27,3 +27,4 @@ Then, add extension module name in the list named `enabled_extends_list` shown i
 - [x] install zsh
 - [ ] fix nouveau problem
 - [ ] support arch-linux
+- [ ] use Docker to debug!
