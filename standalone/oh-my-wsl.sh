@@ -1,7 +1,8 @@
-# https://jiayaoo3o.github.io/2020/06/23/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1WSL2%E7%9A%84%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/
+# https://jiayaoo3o.github.io/2020/06/23/记录一次WSL2的网络代理配置/
 
 export window_host=`cat /etc/resolv.conf | grep nameserver | awk '{print $2}'`
-export ALL_PROXY=socks5://$window_host:10808
+# export ALL_PROXY=socks5://$window_host:10808
+export ALL_PROXY=http://$window_host:10809
 export HTTP_PROXY=$ALL_PROXY
 export http_proxy=$ALL_PROXY
 export HTTPS_PROXY=$ALL_PROXY
