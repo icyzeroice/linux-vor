@@ -21,6 +21,11 @@ cp .tmux/.tmux.conf.local .
 
 # 5. Spacemacs
 cd ~
+
+# cc is needed for emacSQL
+# https://www.reddit.com/r/emacs/comments/adlmh2/emacswindows_emacsqlsqliteensurebinary_no_emacsql/
+sudo apt install clang gcc g++
+
 sudo apt install sqlite
 git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone git@github.com:icyzeroice/.spacemacs.d.git
