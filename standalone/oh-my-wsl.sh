@@ -23,3 +23,8 @@ export BROWSER=wslview
 
 git config --global proxy.https socks5://$windows_host:10808
 
+# ubuntu snap
+# https://www.v2ex.com/t/646650
+# snap set system http.proxy=socks5://$windows_host:10808
+# end file
+
