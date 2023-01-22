@@ -2,9 +2,16 @@
 
 # NOTE: socks   -> 10808
 #       http(s) -> 10809
+#       clash for windows -> 7890
+#
+export GREAT_PROXY_PROTOCOL=socks
+export GREAT_PROXY_PORT=10808
+
+# export GREAT_PROXY_PROTOCOL=http
+# export GREAT_PROXY_PORT=7890
+
 export windows_host=`cat /etc/resolv.conf | grep nameserver | awk '{print $2}'`
-# export ALL_PROXY=socks5://$windows_host:10808
-export ALL_PROXY=http://$windows_host:10809
+export ALL_PROXY=$GREAT_PROXY_PROTOCOL://$windows_host:$GREAT_PROXY_PORT
 export HTTP_PROXY=$ALL_PROXY
 export http_proxy=$ALL_PROXY
 export HTTPS_PROXY=$ALL_PROXY
@@ -16,12 +23,10 @@ export EDITOR=vim
 export BROWSER=wslview
 
 
-# if [ "`git config --global --get proxy.https`" != "socks5://$windows_host:10808" ]
-# then
-#   git config --global proxy.https socks5://$windows_host:10808
-# fi
-
-git config --global proxy.https socks5://$windows_host:10808
+if [ "`git config --global --get proxy.https`" != $ALL_PROXY ]
+then
+  git config --global proxy.https $ALL_PROXY
+fi
 
 # ubuntu snap
 # https://www.v2ex.com/t/646650
